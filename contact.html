@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Two Hill Restaurant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <a class="logo" href="index.html">Two Hill <span>Restaurant</span></a>
+  <a href="index.html">Home &amp; Menu</a>
+  <a href="about.html">About</a>
+  <a href="contact.html" aria-current="page">Contact</a>
+  <a href="cart.html">Cart <span class="cart-count">0</span></a>
+  <a href="order.html">Track order</a>
+</nav>
+<main>
+  <h1 style="color:#133d2f;font-size:clamp(2rem,5vw,3rem)">Contact us</h1>
+  <div class="split">
+    <div>
+      <form onsubmit="event.preventDefault();this.reset();document.getElementById('ok').hidden=false">
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" required>
+        <label for="phone">Phone number</label>
+        <input id="phone" name="phone" type="tel" required>
+        <label for="type">I would like to</label>
+        <select id="type" name="type">
+          <option>Place a takeaway order</option>
+          <option>Book a table</option>
+          <option>Ask about catering</option>
+        </select>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="e.g. 2 Rice &amp; Beef and 1 Passion Juice"></textarea>
+        <button type="submit">Send message</button>
+      </form>
+      <p id="ok" class="note" hidden>Thank you! We will contact you shortly.</p>
+    </div>
+    <div>
+      <h2>Opening hours</h2>
+      <div class="wrap">
+      <table>
+        <thead><tr><th>Day</th><th>Time</th></tr></thead>
+        <tbody>
+          <tr><td>Monday to Friday</td><td>6:30 AM to 9:00 PM</td></tr>
+          <tr><td>Saturday</td><td>7:00 AM to 10:00 PM</td></tr>
+          <tr><td>Sunday</td><td>8:00 AM to 8:00 PM</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <h2 style="margin-top:28px">Find us</h2>
+      <ul>
+        <li>Phone / WhatsApp: <a href="tel:+256700000000">+256 700 000 000</a></li>
+        <li>Email: <a href="mailto:info@twohill.example">info@twohill.example</a></li>
+        <li>Location: near UCU main gate, Mukono (edit to your exact spot)</li>
+      </ul>
+      <h2 style="margin-top:28px">Where we deliver</h2>
+      <iframe class="map" title="Map of Mukono around Uganda Christian University" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=32.725%2C0.345%2C32.760%2C0.370&amp;layer=mapnik&amp;marker=0.3553%2C32.7392"></iframe>
+      <p><a href="https://www.openstreetmap.org/?mlat=0.3553&amp;mlon=32.7392#map=15/0.3553/32.7392">Open larger map</a></p>
+    </div>
+  </div>
+</main>
+<footer><p>&copy; 2026 Two Hill Restaurant &middot; Fresh. Fast. Affordable.</p></footer>
+<script src="app.js"></script>
+</body>
+</html>

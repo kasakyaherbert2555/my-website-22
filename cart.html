@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart | Two Hill Restaurant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <a class="logo" href="index.html">Two Hill <span>Restaurant</span></a>
+  <a href="index.html">Home &amp; Menu</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="cart.html" aria-current="page">Cart <span class="cart-count">0</span></a>
+  <a href="order.html">Track order</a>
+</nav>
+<main>
+  <h1 style="color:#133d2f;font-size:clamp(2rem,5vw,3rem)">Your cart</h1>
+  <p id="empty" class="note" hidden>Your cart is empty. <a href="index.html#menu">Pick something tasty from the menu.</a></p>
+  <div id="checkout-wrap">
+    <div class="wrap">
+      <table>
+        <thead><tr><th>Item</th><th>Price</th><th>Quantity</th><th>Total</th><th></th></tr></thead>
+        <tbody id="cart-body"></tbody>
+      </table>
+    </div>
+    <form id="checkout">
+      <h2>Delivery</h2>
+      <div class="grid2">
+        <div><label for="cname">Your name</label><input id="cname" type="text" required></div>
+        <div><label for="cphone">Phone number</label><input id="cphone" type="tel" placeholder="07XX XXX XXX" required></div>
+        <div><label for="zone">Delivery area</label><select id="zone"></select></div>
+        <div><label for="where">Hall, hostel or street</label><input id="where" type="text" placeholder="e.g. Block B, room 12" required></div>
+      </div>
+      <p>Estimated delivery time: <strong id="eta"></strong></p>
+
+      <h2>Payment method</h2>
+      <div class="pay">
+        <label><input type="radio" name="pay" value="mtn" checked> MTN Mobile Money</label>
+        <label><input type="radio" name="pay" value="airtel"> Airtel Money</label>
+        <label><input type="radio" name="pay" value="card"> Bank card (Visa / Mastercard)</label>
+        <label><input type="radio" name="pay" value="paypal"> PayPal</label>
+        <label><input type="radio" name="pay" value="cash"> Cash on delivery</label>
+      </div>
+      <div id="mm"><label for="mmphone">Mobile money number</label><input id="mmphone" type="tel" placeholder="07XX XXX XXX" required></div>
+      <p id="gw" class="note" hidden></p>
+
+      <h2 style="margin-top:28px">Order summary</h2>
+      <table class="sum">
+        <tbody>
+          <tr><td>Food and drinks</td><td id="sub"></td></tr>
+          <tr><td>Delivery fee</td><td id="fee"></td></tr>
+          <tr><th>Total</th><th id="total"></th></tr>
+        </tbody>
+      </table>
+      <button type="submit">Place order</button>
+    </form>
+  </div>
+</main>
+<footer><p>&copy; 2026 Two Hill Restaurant &middot; Fresh. Fast. Affordable.</p></footer>
+<script src="app.js"></script>
+</body>
+</html>

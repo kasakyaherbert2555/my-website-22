@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Two Hill Restaurant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <a class="logo" href="index.html">Two Hill <span>Restaurant</span></a>
+  <a href="index.html" aria-current="page">Home &amp; Menu</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="cart.html">Cart <span class="cart-count">0</span></a>
+  <a href="order.html">Track order</a>
+</nav>
+<header class="hero">
+  <h1>Good food, between two hills.</h1>
+  <p>Hot meals, quick bites and cold drinks at student-friendly prices. Rice and beef from UGX 5,000.</p>
+  <a class="btn" href="#menu">See the menu</a>
+  <a class="btn alt" href="contact.html">Order or book</a>
+</header>
+<main>
+  <section id="menu">
+    <h2>Our menu</h2>
+    <div class="cats">
+      <a href="#mains">Main meals</a><a href="#fast">Fast foods</a><a href="#breakfast">Breakfast</a><a href="#drinks">Drinks</a><a href="#combos">Combos</a>
+    </div>
+    <h2 id="mains">Main meals</h2>
+    <div class="grid">
+      <article class="item"><div class="pic" data-e="🍛"><img src="images/rice-beef.jpg" alt="Rice &amp; Beef" loading="lazy" onerror="this.remove()"></div><div class="info"><h3>Rice &amp; Beef</h3><p>Steamed rice with tender beef stew</p></div><div class="buy"><span class="price">UGX 5,000</span><button class="add" type="button" data-name="Rice &amp; Beef" data-price="5000">Add +</button></div></article>
+      <article class="item"><div class="pic" data-e="🍚"><img src="images/rice-beans.jpg" alt="Rice &amp; Beans" loading="lazy" onerror="this.remove()"></div><div class="info"><h3>Rice &amp; Beans</h3><p>Rice with well-cooked beans</p></div><div class="buy"><span class="price">UGX 3,500</span><button class="add" type="button" data-name="Rice &amp; Beans" data-price="3500">Add +</button></div></article>
+      <article class="item"><div class="pic" data-e="🍗"><img src="images/rice-chicken.jpg" alt="Rice &amp; Chicken" loading="lazy" onerror="this.remove()"></div><div class="info"><h3>Rice &amp; Chicken</h3><p>Rice with a juicy chicken piece</p></div><div class="buy"><span class="price">UGX 7,000</span><button class="add" type="button" data-name="Rice &amp; Chicken" data-price="7000">Add +</button></div></article>
+      <article class="item"><div class="pic" data-e="🍌"><img src="images/matooke-beef.jpg" alt="Matooke &amp; Beef" loading="lazy" onerror="this.remove()"></div><div class="info"><h3>Matooke &amp; Beef</h3><p>Steamed matooke with beef stew</p></div><div class="buy"><span class="price">UGX 5,000</span><button class="add" type="button" data-name="Matooke &amp; Beef" data-price="5000">Add +</button></div></article>
+      <article class="item"><div class="pic" data-e="🥜"><img src="images/matooke-g-nut.jpg" alt="Matooke &amp; G-nut Sauce" loading="lazy" onerror="this.remove()"></div><div class="info"><h3>Matooke &amp; G-nut Sauce</h3><p>Local favourite, rich groundnut sauce</p></div><div class="buy"><span class="price">UGX 4,000</span><button class="add" type="button" data-name="Matooke &amp; G-nut Sauce" data-price="4000">Add +</button></div></article>
+      <article class="item"><div class="pic" data-e="🥣"><img src="images/posho-beans.jpg" alt="Posho &amp; Beans" loading="lazy" onerror="this.remove()"></div><div class="info"><h3>Posho &amp; Beans</h3><p>Filling and affordable</p></div><div class="buy"><span class="price">UGX 3,000</span><button class="add" type="button" data-name="Posho &amp; Beans" data-price="3000">Add +</button></div></article>
+      <article class="item"><div class="pic" data-e="🐟"><img src="images/rice-fish.jpg" alt="Rice &amp; Fish" loading="lazy" onerror="this.remove()"></div><div class="info"><h3>Rice &amp; Fish</h3><p>Fried tilapia piece with rice</p></div><div class="buy"><span class="price">UGX 8,000</span><button class="add" type="button" data-name="Rice &amp; Fish" data-price="8000">Add +</button></div></article>
+      <article class="item"><div class="pic" data-e="🥔"><img src="images/irish-beef.jpg" alt="Irish Potatoes &amp; Beef" loading="lazy" onerror="this.remove()"></div><div class="info"><h3>Irish Potatoes &amp; Beef</h3><p>Boiled potatoes in beef stew</p></div><div class="buy"><span class="price">UGX 5,000</span><button class="add" type="button" data-name="Irish Potatoes &amp; Beef" data-price="5000">Add +</button></div></article>
+    </div>
+    <h2 id="fast" style="margin-top:36px">Fast foods</h2>
+    <div class="grid">
+      <article class="item"><div class="pic" data-e="🌭"><img src="images/sausage.jpg" alt="Sausage" loading="lazy" onerror="this.remove()"></div><div class="info"><h3>Sausage</h3><p>Grilled sausage, ready in minutes</p></div><div class="buy"><span class="price">UGX 1,500</span><button class="add" type="button" data-name="Sausage" data-price="1500">Add +</button></div></article>
+      <article class="item"><div class="pic" data-e="🥟"><img src="images/samosa.jpg" alt="Samosa" loading="lazy" onerror="this.remove()"></div><div class="info"><h3>Samosa</h3><p>Crispy, filled with spiced beef</p></div><div class="buy"><span class="price">UGX 1,000</span><button class="add" type="button" data-name="Samosa" data-price="1000">Add +</button></div></article>
+      <article class="item"><div class="pic" data-e="🌯"><img src="images/rolex.jpg" alt="Rolex" loading="lazy" onerror="this.remove()"></div><div class="info"><h3>Rolex</h3><p>Chapati rolled with eggs and vegetables</p></div><div class="buy"><span class="price">UGX 3,000</span><button class="add" type="button" data-name="Rolex" data-price="3000">Add +</button></div></article>
+      <article class="item"><div class="pic" data-e="🍟"><img src="images/chips.jpg" alt="Chips" loading="lazy" onerror="this.remove()"></div><div class="info"><h3>Chips</h3><p>Golden fried potato chips</p></div><div class="buy"><span class="price">UGX 3,000</span><button class="add" type="button" data-name="Chips" data-price="3000">Add +</button></div></article>
+      <article class="item"><div class="pic" data-e="🍗"><img src="images/chicken-piece.jpg" alt="Fried Chicken Piece" loading="lazy" onerror="this.remove()"></div><div class="info"><h3>Fried Chicken Piece</h3><p>Crispy and seasoned</p></div><div class="buy"><span class="price">UGX 5,000</span><button class="add" type="button" data-name="Fried Chicken Piece" data-price="5000">Add +</button></div></article>
+      <article class="item"><div class="pic" data-e="🥚"><img src="images/egg-sausage.jpg" alt="Egg &amp; Sausage" loading="lazy" onerror="this.remove()"></div><div class="info"><h3>Egg &amp; Sausage</h3><p>Boiled egg with grilled sausage</p></div><div class="buy"><span class="price">UGX 2,500</span><button class="add" type="button" data-name="Egg &amp; Sausage" data-price="2500">Add +</button></div></article>
+    </div>
+    <h2 id="breakfast" style="margin-top:36px">Breakfast</h2>
+    <div class="grid">
+      <article class="item"><div class="pic" data-e="🫓"><img src="images/chapati-beans.jpg" alt="Chapati &amp; Beans" loading="lazy" onerror="this.remove()"></div><div class="info"><h3>Chapati &amp; Beans</h3><p>Soft chapati with beans</p></div><div class="buy"><span class="price">UGX 2,500</span><button class="add" type="button" data-name="Chapati &amp; Beans" data-price="2500">Add +</button></div></article>
+      <article class="item"><div class="pic" data-e="🍳"><img src="images/omelette.jpg" alt="Egg Omelette" loading="lazy" onerror="this.remove()"></div><div class="info"><h3>Egg Omelette</h3><p>Eggs with onions and tomatoes</p></div><div class="buy"><span class="price">UGX 2,500</span><button class="add" type="button" data-name="Egg Omelette" data-price="2500">Add +</button></div></article>
+      <article class="item"><div class="pic" data-e="🍲"><img src="images/katogo.jpg" alt="Katogo" loading="lazy" onerror="this.remove()"></div><div class="info"><h3>Katogo</h3><p>Matooke cooked with beef or offals</p></div><div class="buy"><span class="price">UGX 4,000</span><button class="add" type="button" data-name="Katogo" data-price="4000">Add +</button></div></article>
+      <article class="item"><div class="pic" data-e="🍩"><img src="images/mandazi.jpg" alt="Mandazi (2 pieces)" loading="lazy" onerror="this.remove()"></div><div class="info"><h3>Mandazi (2 pieces)</h3><p>Fried and lightly sweet</p></div><div class="buy"><span class="price">UGX 1,000</span><button class="add" type="button" data-name="Mandazi (2 pieces)" data-price="1000">Add +</button></div></article>
+      <article class="item"><div class="pic" data-e="🥛"><img src="images/porridge.jpg" alt="Porridge" loading="lazy" onerror="this.remove()"></div><div class="info"><h3>Porridge</h3><p>Hot millet porridge</p></div><div class="buy"><span class="price">UGX 1,500</span><button class="add" type="button" data-name="Porridge" data-price="1500">Add +</button></div></article>
+      <article class="item"><div class="pic" data-e="☕"><img src="images/tea.jpg" alt="Tea (milk or black)" loading="lazy" onerror="this.remove()"></div><div class="info"><h3>Tea (milk or black)</h3><p>Served hot</p></div><div class="buy"><span class="price">UGX 1,500</span><button class="add" type="button" data-name="Tea (milk or black)" data-price="1500">Add +</button></div></article>
+    </div>
+    <h2 id="drinks" style="margin-top:36px">Drinks</h2>
+    <div class="grid">
+      <article class="item"><div class="pic" data-e="💧"><img src="images/water-500.jpg" alt="Water 500ml" loading="lazy" onerror="this.remove()"></div><div class="info"><h3>Water 500ml</h3><p>Bottled drinking water</p></div><div class="buy"><span class="price">UGX 1,000</span><button class="add" type="button" data-name="Water 500ml" data-price="1000">Add +</button></div></article>
+      <article class="item"><div class="pic" data-e="💧"><img src="images/water-15.jpg" alt="Water 1.5L" loading="lazy" onerror="this.remove()"></div><div class="info"><h3>Water 1.5L</h3><p>Large bottle, good for sharing</p></div><div class="buy"><span class="price">UGX 2,000</span><button class="add" type="button" data-name="Water 1.5L" data-price="2000">Add +</button></div></article>
+      <article class="item"><div class="pic" data-e="🥤"><img src="images/soda-300.jpg" alt="Soda 300ml" loading="lazy" onerror="this.remove()"></div><div class="info"><h3>Soda 300ml</h3><p>Coca-Cola, Fanta, Sprite, Pepsi</p></div><div class="buy"><span class="price">UGX 1,500</span><button class="add" type="button" data-name="Soda 300ml" data-price="1500">Add +</button></div></article>
+      <article class="item"><div class="pic" data-e="🥤"><img src="images/soda-500.jpg" alt="Soda 500ml" loading="lazy" onerror="this.remove()"></div><div class="info"><h3>Soda 500ml</h3><p>Coca-Cola, Fanta, Sprite, Pepsi</p></div><div class="buy"><span class="price">UGX 2,000</span><button class="add" type="button" data-name="Soda 500ml" data-price="2000">Add +</button></div></article>
+      <article class="item"><div class="pic" data-e="🍹"><img src="images/passion.jpg" alt="Fresh Passion Juice" loading="lazy" onerror="this.remove()"></div><div class="info"><h3>Fresh Passion Juice</h3><p>Freshly made, no added colour</p></div><div class="buy"><span class="price">UGX 2,500</span><button class="add" type="button" data-name="Fresh Passion Juice" data-price="2500">Add +</button></div></article>
+      <article class="item"><div class="pic" data-e="🍉"><img src="images/watermelon.jpg" alt="Fresh Watermelon Juice" loading="lazy" onerror="this.remove()"></div><div class="info"><h3>Fresh Watermelon Juice</h3><p>Cold and refreshing</p></div><div class="buy"><span class="price">UGX 2,500</span><button class="add" type="button" data-name="Fresh Watermelon Juice" data-price="2500">Add +</button></div></article>
+    </div>
+    <p class="note" style="margin-top:24px"><strong>Prices are in Uganda shillings (UGX)</strong> and may change. Ask at the counter for today's specials.</p>
+  </section>
+
+  <section id="combos">
+    <h2>Combo deals</h2>
+    <div class="wrap">
+    <table>
+      <thead><tr><th>Combo</th><th>What you get</th><th>Price</th><th>Order</th></tr></thead>
+      <tbody>
+        <tr><td>Student Special</td><td>Rice &amp; Beans + 300ml soda</td><td>UGX 4,500</td><td><button class="add" type="button" data-name="Combo: Student Special" data-price="4500">Add +</button></td></tr>
+        <tr><td>Hill Classic</td><td>Rice &amp; Beef + 500ml water</td><td>UGX 5,800</td><td><button class="add" type="button" data-name="Combo: Hill Classic" data-price="5800">Add +</button></td></tr>
+        <tr><td>Quick Bite</td><td>Samosa + Sausage + 300ml soda</td><td>UGX 3,500</td><td><button class="add" type="button" data-name="Combo: Quick Bite" data-price="3500">Add +</button></td></tr>
+        <tr><td>Morning Start</td><td>Chapati &amp; Beans + Tea</td><td>UGX 3,800</td><td><button class="add" type="button" data-name="Combo: Morning Start" data-price="3800">Add +</button></td></tr>
+      </tbody>
+    </table>
+    </div>
+  </section>
+</main>
+<footer><p>&copy; 2026 Two Hill Restaurant &middot; Fresh. Fast. Affordable.</p></footer>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Track order | Two Hill Restaurant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <a class="logo" href="index.html">Two Hill <span>Restaurant</span></a>
+  <a href="index.html">Home &amp; Menu</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="cart.html">Cart <span class="cart-count">0</span></a>
+  <a href="order.html" aria-current="page">Track order</a>
+</nav>
+<main>
+  <h1 style="color:#133d2f;font-size:clamp(2rem,5vw,3rem)">Track your order</h1>
+  <p id="none" class="note" hidden>No active order yet. <a href="index.html#menu">Order something from the menu.</a></p>
+  <div id="track">
+    <p>Order <strong id="oid"></strong> &middot; Delivering to <span id="owhere"></span></p>
+    <p class="big" id="left"></p>
+    <p>Expected around <strong id="oclock"></strong></p>
+    <div class="bar"><div id="bar"></div></div>
+    <ol class="steps">
+      <li id="s0">Order received</li>
+      <li id="s1">Cooking your food</li>
+      <li id="s2">Rider on the way</li>
+      <li id="s3">Delivered</li>
+    </ol>
+    <label style="font-weight:600"><input id="demo" type="checkbox" style="width:auto"> Demo speed (1 second = 1 minute, for presentations)</label>
+    <div class="split" style="margin-top:28px">
+      <div>
+        <h2>Order details</h2>
+        <div class="wrap"><table><tbody id="osum"></tbody></table></div>
+        <p id="opay"></p>
+      </div>
+      <div>
+        <h2>Delivery area</h2>
+        <iframe class="map" title="Map of Mukono around Uganda Christian University" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=32.725%2C0.345%2C32.760%2C0.370&amp;layer=mapnik&amp;marker=0.3553%2C32.7392"></iframe>
+      </div>
+    </div>
+  </div>
+</main>
+<footer><p>&copy; 2026 Two Hill Restaurant &middot; Fresh. Fast. Affordable.</p></footer>
+<script src="app.js"></script>
+</body>
+</html>
